@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for spec in specialities %}
+        <a href="{% url 'speciality' id=spec.id %}">{{ spec.name }}</a><br>
+
+    {% endfor %}
+{% endblock %}
